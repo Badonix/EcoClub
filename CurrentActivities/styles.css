@@ -1,0 +1,278 @@
+@import url("//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "ALK Sanet", sans-serif;
+  transition: 0.5s;
+}
+body {
+  margin-top: 70px;
+  background: rgb(105, 245, 100);
+  background: radial-gradient(
+    circle,
+    rgba(105, 245, 100, 1) 0%,
+    rgba(158, 247, 137, 1) 9%,
+    rgba(167, 246, 152, 1) 22%,
+    rgba(151, 242, 148, 1) 42%,
+    rgb(186, 255, 194) 53%,
+    rgb(172, 255, 182) 66%,
+    rgba(132, 231, 143, 1) 85%
+  );
+}
+
+a{
+  font-family: none;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  animation: zemodan_chamosvla 1s ease-in-out forwards;
+  width: 100%;
+  height: 20rem;
+}
+
+.title_box {
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  box-shadow: 40px 40px 40px 40px rgba(255, 255, 255, 0.479);
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  align-items: center;
+}
+
+.title_box:hover {
+  width: 52%;
+  height: 22%;
+}
+h1 {
+  -webkit-text-stroke: 0.01px #242424;
+  color: white;
+  font-size: 50px;
+}
+
+.activity {
+  padding: 2rem;
+  width: 80%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  margin: 2rem;
+  transition: 0.5s;
+}
+
+.activity:hover {
+  background-color: #f6fff7cb;
+  cursor: pointer;
+  width: 80.5%;
+}
+
+.act_title {
+  font-size: 25px;
+  align-self: flex-start;
+}
+.date {
+  align-self: flex-end;
+  margin-top: 1rem;
+  color: #aaaaaa;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle_line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.photo {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 2px;
+}
+.desc {
+  width: auto;
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 1440px) {
+  
+  .title_box {
+    width: 100%;
+  }
+  .photo {
+    margin: 1rem;
+  }
+  .desc {
+    width: auto;
+  }
+  .container__img-holder {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .photo {
+    width: 200%;
+  }
+}
+
+@media (max-width: 618px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 476px) {
+  h1 {
+    font-size: 35px;
+  }
+  .activity {
+    width: 90%;
+  }
+}
+@media (max-width: 416px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 352px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 296px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+.container__img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49.5%;
+}
+
+.container .container__img-holder:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+/* Popup */
+.img-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 100;
+}
+
+.img-popup img {
+  max-width: 900px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+
+.close-btn {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn .bar {
+  height: 4px;
+  background: #333;
+}
+
+.close-btn .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.close-btn .bar:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.opened {
+  display: flex;
+}
+
+.opened img {
+  animation: animatepopup 1s ease-in-out 0.8s;
+  -webkit-animation: animatepopup 0.3s ease-in-out forwards;
+}
+
+@keyframes animatepopup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.animated_activity {
+  animation: zemodan_chamosvla 0.5s ease-in-out forwards;
+}
+
+@media screen and (max-width: 880px) {
+  .container .container__img-holder:nth-child(3n + 1) {
+    margin-left: 16px;
+  }
+}
+
+@keyframes zemodan_chamosvla {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    display: contents;
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}

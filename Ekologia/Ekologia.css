@@ -1,0 +1,203 @@
+body{
+    margin-top: 100px;
+    background-color: rgb(26, 188, 156);
+}
+    body{
+        overflow-x: hidden;
+    }
+    /* navbar */
+    .topnav {
+        
+        background-color: rgb(10, 58, 3);
+        overflow: hidden;
+      }
+      
+      .topnav a {
+        float: right;
+        color: #0bc7ce;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: rgb(77, 233, 90);
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+    
+    h2{
+        margin-top: 100px;
+        color:#1b800e;
+        text-align: center;
+        font-size:35px;
+    }
+    
+    .containers, .container{
+        display:flex;
+    }
+    
+    .boxes{
+        width: 150px;
+        height: 130px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    
+    .main{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 25px;
+        background-color: rgb(186, 219, 219);
+        text-align: justify;
+      text-justify: inter-word;
+    }
+    
+    .box{
+        width:150px;
+        height:130px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    
+    .meanings{
+        list-style-type: inherit;
+        border: 10px inset rgb(116, 112, 112);
+        padding-bottom: 0%;
+        width: 470px;
+        height: 330px;
+        margin-left: 10px;
+        }
+    
+    
+    tr:nth-child(even){
+        background-color: #13a378;
+    }
+    
+    tr:nth-child(odd){
+        background-color: #00ffbf;
+    }
+    table, tr, td, th{
+        border: 2px solid black;    
+    }
+    
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+    
+        body{
+            margin:0;
+        }
+    
+        .carousel{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+    
+        .carousel > ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .slide{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: 200ms opacity ease-in-out;
+            transition-delay: 200ms;
+        }
+    
+        .slide > img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .slide[data-active] {
+            opacity: 1;
+            z-index: 1;
+            transition-delay: 0ms;
+        }
+    
+        .carousel-button{
+            position: absolute;
+            z-index: 2;
+            background: none;
+            border:none;
+            font-size: 4rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, .5);
+            cursor: pointer;
+            border-radius: .25rem;
+            padding: 0 .5rem;
+            background-color: rgba(0, 0, 0, .1);
+    
+        }
+    
+        .carousel-button:hover{
+        /* .carousel-button:focus{ */
+            color: white;
+            background-color: rgba(0, 0, 0, .2);
+        }
+    
+        /* .carousel-button:focus{
+            outline: 1px solid black;
+        } */
+    
+        .carousel-button.prev{
+            left: 1rem;
+        }
+    
+        .carousel-button.next{
+            right: 1rem;
+        }
+    
+    
+        .more{
+            font-size:20px;
+            background-color:rgb(26, 188, 156);
+            text-align: center;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color:#94570d;
+        }
+        a:hover{
+            color:black;
+        }
+        a:aktiv{
+            color: rgb(104, 1, 1);
+        }
+        .links{
+            text-align: center;
+        }
+    
+        .footer{
+            background: rgb(52, 54, 50);
+            padding: 20px;
+            text-align: center;
+        
+          }
+        
+          .fa-brands{
+            font-size: 40px;
+            /* text-align: center; */
+            text-decoration: none;
+            color: black;
+            }
+            .fa-brands:hover{
+              opacity: 0.7;
+            }

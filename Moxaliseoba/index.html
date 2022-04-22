@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moxaliseoba</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4359eca367.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="moxaliseoba.js" defer></script>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://i.ibb.co/NKCYcp2/favicon.png"
+    />
+    <script>
+      $(function () {
+        $("#Nav").load("../NavBar/NavBar.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="Nav"></div>
+    <div class="container">
+      <form
+        id="contact"
+        action="https://formsubmit.co/{{{{{{{EMAILI}}}}}}}"
+        method="POST"
+        target="_blank"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/thanks.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <h3>მოხალისეობა</h3>
+        <h4>კლუბში გაწევრიანება</h4>
+        <fieldset>
+          <input
+            id="saxgvar"
+            placeholder="სახელი და გვარი"
+            type="text"
+            name="name"
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="elfost"
+            placeholder="ელფოსტა"
+            type="text"
+            name="mail"
+            tabindex="2"
+          />
+        </fieldset>
+        <fieldset>
+          <input id="class" placeholder="კლასი" type="tel" name="class" />
+        </fieldset>
+        <fieldset>
+          <input
+            id="fb"
+            placeholder="Facebook პროფილი"
+            name="facebook"
+            type="text"
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            id="about"
+            placeholder="თქვენს შესახებ..."
+            name="about"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit">
+            გაწევრიანება
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
