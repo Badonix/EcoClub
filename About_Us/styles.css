@@ -30,7 +30,7 @@ tetri xazi low-res fix */
   only screen and (min-device-pixel-ratio: 1.5) {
   html,
   body {
-    margin-top: 100px;
+    
     width: 100%;
     overflow-x: hidden;
   }
@@ -534,12 +534,24 @@ i {
     width: 100%;
   }
 }
+
+@media only screen and (max-width:548px){
+  .second_part{
+    height:1200px;
+  }
+}
+@media only screen and (max-width:335px){
+  .second_part{
+    height:1400px;
+  }
+}
 @media only screen and (max-width: 919px) {
   .first_part {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:950px;
   }
   .logo5 {
     margin-top: 2rem;
@@ -547,6 +559,18 @@ i {
   }
   .logo5:hover {
     width: 90.5%;
+  }
+}
+
+@media only screen and (max-width: 582px){
+  .title5{
+    font-size:5rem;
+  }
+}
+
+@media(max-width:408px){
+  .first_part{
+    margin-top:50px;
   }
 }
 @media only screen and (max-width: 541px) {
@@ -567,7 +591,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 363px) {
+@media only screen and (max-width: 369px) {
   .goals {
     font-size: 2rem;
   }
@@ -591,7 +615,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 309px) {
+@media only screen and (max-width: 335px) {
   .second_part {
     height: 1800px;
   }

@@ -1,0 +1,51 @@
+@import url("//cdn.web-fonts.ge/fonts/ka-lortkipanidze/css/ka-lortkipanidze.min.css");
+
+
+body{
+    background-color: rgb(119, 255, 119);
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:5rem;
+    color: rgb(236, 255, 234);
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
+}
+
+button{
+    font-family: "KA_LORTKIPANIDZE", sans-serif;
+    outline:none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:rgb(9, 214, 9);
+    color:white;
+    width:40%;
+    height:auto;
+    padding:15px;
+    font-size:3rem;
+    cursor:pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color:rgb(49, 148, 49);
+}
+
+
+@media (max-width:690px){
+    button{
+        font-size:2rem;
+    }
+}
+@media (max-width:494px){
+    button{
+       width:60%;
+    }
+    h1{
+        font-size:3rem;
+    }
+}
