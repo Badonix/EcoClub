@@ -54,6 +54,14 @@ h1 {
   font-size: 50px;
 }
 
+@media(max-width:800px){
+  h1 {
+    -webkit-text-stroke: 1px #242424;
+    color: white;
+    font-size: 50px;
+  }
+}
+
 .activity {
   padding: 2rem;
   width: 80%;

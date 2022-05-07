@@ -562,7 +562,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 582px){
+@media only screen and (max-width: 650px){
   .title5{
     font-size:5rem;
   }
@@ -591,12 +591,12 @@ i {
   }
 }
 
-@media only screen and (max-width: 369px) {
+@media only screen and (max-width: 400px) {
   .goals {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .goals:hover {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -617,7 +617,7 @@ i {
 
 @media only screen and (max-width: 335px) {
   .second_part {
-    height: 1800px;
+    height: 2000px;
   }
   .aboutTitle {
     font-size: 2rem;
@@ -630,5 +630,12 @@ i {
 @media only screen and (max-width: 249px) {
   .second_part {
     height: 2000px;
+  }
+}
+
+
+@media (max-width:248px){
+  .second_part{
+    height:2300px;
   }
 }
