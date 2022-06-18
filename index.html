@@ -4,432 +4,235 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>მაღაზია 12</title>
+    <title>მთავარი</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <script
-      src="https://kit.fontawesome.com/d95d610dc3.js"
+      src="https://kit.fontawesome.com/4359eca367.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://i.ibb.co/NKCYcp2/favicon.png"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#Nav").load("../NavBar/NavBar.html");
+      });
+    </script>
   </head>
   <body>
-    <div class="invisible"></div>
-    <section id="header">
-      <a href="#/"><img src=images/logo.png alt="error" class="logo"></a>
-      <nav>
-        <ul id="navbar">
-          <li><a class="active" href="index.html">მთავარი</a></li>
-          <li><a href="shop.html">მაღაზია</a></li>
-          <li><a href="blog.html">ბლოგი</a></li>
-          <li><a href="about.html">ჩვენ შესახებ</a></li>
-          <li><a href="contact.html">კონტაქტი</a></li>
-          <li id="lg-bag">
-            <a href="cart.html"> <i class="fa fa-solid fa-cart-plus"></i></a>
-          </li>
-          <a href="#/" id="close"><i class="fas fa-circle-xmark"></i></a>
-        </ul>
-      </nav>
-      <div id="mobile">
-        <a href="cart.html"> <i class="fa fa-solid fa-cart-plus"></i></a>
-        <i id="bar" class="fas fa-bars"></i>
-      </div>
-    </section>
-    <section id="hero">
-      <h4>Trade-in შეთავაზება</h4>
-      <h2>საუკეთესო ფასები</h2>
-      <h1>ყველა პროდუქტზე</h1>
-      <p>დაზოგე 70%-მდე პრომოკოდებით!</p>
-      <button>შეძენა</button>
-    </section>
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img src="images/features/f1.png" alt="error" />
-        <h6>უფასო მიტანა</h6>
-      </div>
-      <div class="fe-box">
-        <img src="images/features/f2.png" alt="error" />
-        <h6>ონლაინ შეკვეთა</h6>
-      </div>
-      <div class="fe-box">
-        <img src="images/features/f3.png" alt="error" />
-        <h6>ფულის დაზოგვა</h6>
-      </div>
-      <div class="fe-box">
-        <img src="images/features/f4.png" alt="error" />
-        <h6>დაწინაურება დაწინაურება</h6>
-      </div>
-      <div class="fe-box">
-        <img src="images/features/f5.png" alt="error" />
-        <h6>იდეალური პროდუქტი</h6>
-      </div>
-      <div class="fe-box">
-        <img src="images/features/f6.png" alt="error" />
-        <h6>24/7 დახმარება</h6>
-      </div>
-    </section>
-    <section class="section-p1" id="product1">
-      <h2>პოპულაურლი პროდუქცია</h2>
-      <p>საზაფხულო კოლექცია</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="images/products/f1.jpg" alt="error" />
-          <div class="des">
-            <span>ზარა</span>
-            <h5>ყვავილებიანი ზედა 1</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f2.jpg" alt="error" />
-          <div class="des">
-            <span>ზარა</span>
-            <h5>ყვავილებიანი ზედა 2</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f3.jpg" alt="error" />
-          <div class="des">
-            <span>ზარა</span>
-            <h5>ყვავილებიანი ზედა 3</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f4.jpg" alt="error" />
-          <div class="des">
-            <span>ტოკიო</span>
-            <h5>საკურებიანი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f5.jpg" alt="error" />
-          <div class="des">
-            <span>იაგუარი</span>
-            <h5>წითელ ყვავილიანები მაისური</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f6.jpg" alt="error" />
-          <div class="des">
-            <span>რობლოქსი</span>
-            <h5>წითელ-ლურჯი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f7.jpg" alt="error" />
-          <div class="des">
-            <span>მანგო</span>
-            <h5>ყვავილიანი შარვალი</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/f8.jpg" alt="error" />
-          <div class="des">
-            <span>ფისო შოპი</span>
-            <h5>კატებიანი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
-    </section>
-    <section id="banner" class="section-m1">
-      <h4>ფასდაკლებები</h4>
-      <h2>დაზოგე <span> 70%-მდე</span> ფასდაკლებებით!</h2>
-      <button class="normal">დეტალურად</button>
-    </section>
-    <section class="section-p1" id="product1">
-      <h2>ახალი პროდუქცია</h2>
-      <p>საზაფხულო კოლექცია</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="images/products/n1.jpg" alt="error" />
-          <div class="des">
-            <span>პუალი</span>
-            <h5>ცისფერი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n2.jpg" alt="error" />
-          <div class="des">
-            <span>ზარა</span>
-            <h5>ყვავილებიანი ზედა 2</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n3.jpg" alt="error" />
-          <div class="des">
-            <span>ზარა</span>
-            <h5>ყვავილებიანი ზედა 3</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n4.jpg" alt="error" />
-          <div class="des">
-            <span>ტოკიო</span>
-            <h5>საკურებიანი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n5.jpg" alt="error" />
-          <div class="des">
-            <span>იაგუარი</span>
-            <h5>წითელ ყვავილიანები მაისური</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n6.jpg" alt="error" />
-          <div class="des">
-            <span>რობლოქსი</span>
-            <h5>წითელ-ლურჯი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n7.jpg" alt="error" />
-          <div class="des">
-            <span>მანგო</span>
-            <h5>ყვავილიანი შარვალი</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="images/products/n8.jpg" alt="error" />
-          <div class="des">
-            <span>ფისო შოპი</span>
-            <h5>კატებიანი ზედა</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₾75</h4>
-          </div>
-          <a href="#/"><i class="fal fas fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
-    </section>
-    <section id="sm-banner" class="section-p1">
-      <div class="banner-box">
-        <h4>საოცარი შეთავაზებები</h4>
-        <h2>იყიდე 1 მიიღე მეორე საჩუქრად</h2>
-        <span>საუკეთესო ტანსაცმელი მხოლოდ ჩვენთან!</span>
-        <button class="white">დეტალურად</button>
-      </div>
-      <div class="banner-box banner-box2">
-        <h4>გაზაფხული/ზაფხული</h4>
-        <h2>მომავალი კოლექცია</h2>
-        <span>საუკეთესო ტანსაცმელი მხოლოდ ჩვენთან!</span>
-        <button class="white">კოლექცია</button>
-      </div>
-    </section>
-    <section id="banner3">
-      <div class="banner-box">
-        <h2>სეზონური ფასდაკლება</h2>
-        <h3>50% ფასდაკლება ყველა ზამთრის კოლექციაზე</h3>
-      </div>
-      <div class="banner-box banner-box2">
-        <h2>შემოდგომის კოლექცია</h2>
-        <h3>30% ფასდაკლება ყველა შემოდგომის კოლექციაზე</h3>
-      </div>
-      <div class="banner-box banner-box3">
-        <h2>საუკეთესო ფასები</h2>
-        <h3>70%მდე ფასდაკლება!</h3>
-      </div>
-    </section>
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>დარეგისტრირდი ახალი ამბებისთვის</h4>
-        <p>
-          მიიღე შეტყობინებები მეილზე ახალი კოლექციის და
-          <span> სპეციალური შეთავაზებების </span>
-          შესახებ
-        </p>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="თქვენი მეილი" />
-        <button class="normal">დარეგისტრირება</button>
-      </div>
-    </section>
-    <footer class="section-p1">
-      <div class="footer-container">
-        <div class="col">
-          <img src="/images/logo.png" class="logo" alt="error" />
-          <h4>კონტაქტი</h4>
-          <p><strong>მისამართი:</strong> ჭავჭავაძის 12</p>
-          <p><strong>ტელეფონი:</strong> 555 12 41 18</p>
-          <p><strong>სამუშაო საათები:</strong> 08:00 - 21:00 ორშ-კვირა</p>
-          <div class="follow">
-            <h4>სოციალური ქსელები</h4>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-          </div>
-        </div>
-        <div class="col">
-          <h4>შესახებ</h4>
-          <a href="#/">ჩვენ შესახებ</a>
-          <a href="#/">მიტანის სერვისი</a>
-          <a href="#/">კონფიდენციალურობის პოლიტიკა</a>
-          <a href="#/">პირობები</a>
-          <a href="#/">დაგვიკავშირდით</a>
-        </div>
-        <div class="col">
-          <h4>ჩემი ექაუნთი</h4>
-          <a href="#/">შესვლა</a>
-          <a href="#/">კალათის ნახვა</a>
-          <a href="#/">ჩემი სურვილები</a>
-          <a href="#/">ჩემი შეკვეთები</a>
-          <a href="#/">დახმარება</a>
-        </div>
+    <div id="Nav" style="z-index: 9999999"></div>
 
-        <div class="col install">
-          <h4>აპლიკაციის გადმოწერა</h4>
-          <p>App Store-იდან თუ Google Play-დან?</p>
-          <div class="row">
-            <img src="images/pay/app.jpg" alt="" />
-            <img src="images/pay/play.jpg" alt="" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <div class="top_page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center typewriter">
+            <h1 class="animate-character typewriter">ეკოკლუბი "კომბოსტო"</h1>
           </div>
-          <p>დაცული გადახდის გზები</p>
-          <img src="images/pay/pay.png" alt="" />
         </div>
+      </div>
+    </div>
+    <div class="resources">
+      <div class="title_res">
+        <h1 class="our_resources">ჩვენი რესურსები</h1>
+        <hr style="width: 60%" />
       </div>
 
-      <div class="copyright">
-        <p>© 2022 Nickelodeon etc.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card__image-holder">
+            <img
+              class="card__image"
+              src="https://img.youtube.com/vi/B8f_sX-a0b8/sddefault.jpg"
+              alt="wave"
+            />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              პოდკასტი
+
+              <small>12 კლასის დანიშნულება საქართველოში</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              პოდკასტის წარადგინეს სსიპ ვლადიმირ კომაროვის თბილისის
+              ფიზიკა-მათემატიკის N199 საჯარო სკოლის ,ეკოკლუბი "კომბოსტოს"
+              წევრებმა დავით ყაველაშვილმა და ლუკა ვარდოსანიძემ
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a
+                  onclick="window.open('https://www.youtube.com/watch?v=B8f_sX-a0b8', '_blank').focus();"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=B8f_sX-a0b8"
+                  class="btn"
+                  >მოსმენა</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image-holder">
+            <img
+              class="card__image"
+              src="https://img.youtube.com/vi/iSuZN-xqzaU/sddefault.jpg"
+              alt="field"
+            />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              პოდკასტი
+              <small
+                >Mr beast - ის ეკო პროექტები (#teamseas & #teamtrees)</small
+              >
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              პოდკასტის წარადგინეს სსიპ ვლადიმირ კომაროვის თბილისის
+              ფიზიკა-მათემატიკის N199 საჯარო სკოლის ,ეკოკლუბი "კომბოსტოს"
+              წევრებმა დავით ყაველაშვილმა და ლუკა ვარდოსანიძემ
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a
+                  onclick="window.open('https://www.youtube.com/watch?v=iSuZN-xqzaU', '_blank').focus();"
+                  target="_blank"
+                  class="btn"
+                  >მოსმენა</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img
+              class="card__image"
+              src="https://img.youtube.com/vi/7uCaOieAG5M/sddefault.jpg"
+              alt="mountain"
+            />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              პოდკასტი
+              <small>სამსახური vs ბიზნესი</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              პოდკასტის წარადგინეს სსიპ ვლადიმირ კომაროვის თბილისის
+              ფიზიკა-მათემატიკის N199 საჯარო სკოლის ,ეკოკლუბი "კომბოსტოს"
+              წევრებმა დავით ყაველაშვილმა და ლუკა ვარდოსანიძემ
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a
+                  onclick="window.open('https://www.youtube.com/watch?v=7uCaOieAG5M', '_blank').focus();"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=B8f_sX-a0b8"
+                  class="btn"
+                  >მოსმენა</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image-holder">
+            <img
+              class="card__image"
+              src="https://img.youtube.com/vi/que_77AWY5Q/sddefault.jpg"
+              alt="beach"
+            />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              პოდკასტი
+              <small>კაცობრიობის მომავალი</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              პოდკასტის წარადგინეს სსიპ ვლადიმირ კომაროვის თბილისის
+              ფიზიკა-მათემატიკის N199 საჯარო სკოლის ,ეკოკლუბი "კომბოსტოს"
+              წევრებმა დავით ყაველაშვილმა და ლუკა ვარდოსანიძემ
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a
+                  onclick="window.open('https://www.youtube.com/watch?v=que_77AWY5Q', '_blank').focus();"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=B8f_sX-a0b8"
+                  class="btn"
+                  >მოსმენა</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="./photos/FreeRes.png" alt="water" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              უფასო რესურსები/ლინკები
+              <small></small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              უფასო რესურსები მათ შორის SAT და TOEFL
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a
+                  onclick="window.open('https://docs.google.com/document/d/1WIfa2RlURozIEuEvXXwf8VsN1rhehNH2GP8vUhIbSTQ/edit', '_blank').focus();"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=B8f_sX-a0b8"
+                  class="btn"
+                  >ნახვა</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
